@@ -23,8 +23,11 @@ public class Position{
 		if(this.o.getClass()==Player.class) {
 			this.b.setPlayer(this);
 		}
-		else {
+		else if(this.o.getClass()==Pirate.class){
 			this.b.setPirate(this);
+		}
+		else {
+			this.b.setBarrier(this);
 		}
 	}
 	
@@ -51,8 +54,11 @@ public class Position{
 		if(this.o.equals(Player.class)) {
 			this.b.setPlayer(this);
 		}
-		else {
+		else if(this.o.equals(Pirate.class)){
 			this.b.setPirate(this);
+		}
+		else {
+			this.b.setBarrier(this);
 		}
 	}
 	
@@ -187,8 +193,11 @@ public class Position{
 		if(this.o.equals(Player.class)) {
 			this.b.removePlayer(p);
 		}
-		else {
+		else if(this.o.equals(Pirate.class)){
 			this.b.removePirate(p);
+		}
+		else {
+			this.b.removeBarrier(p);
 		}
 	}
 	
@@ -196,8 +205,11 @@ public class Position{
 		if(this.o.equals(Player.class)) {
 			this.b.setPlayer(p);
 		}
-		else {
+		else if(this.o.equals(Pirate.class)){
 			this.b.setPirate(p);
+		}
+		else {
+			this.b.setBarrier(p);
 		}
 	}
 	

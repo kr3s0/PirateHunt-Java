@@ -78,20 +78,20 @@ public class Board {
 		//To-Do: Same as in removePlayer(Position p);
 	}
 	
-	private String onPosition(Position p) {
+	public String onPosition(Position p) {
 		if(!isValidPosition(p)) {
 			return this.Empty;
 		}
 		return matrix[p.getX()][p.getY()];
 	}
 	
-	private void generateBarrier() {
-		matrix[(int)(Math.random()*this.rows)][(int)(Math.random()*this.columns)]=this.Barrier;
+	public void setBarrier(Position p) {
+		this.matrix[p.getX()][p.getY()]=this.Barrier;
 	}
 	
-	public void generateBarriers(int numberOf) {
-		for(int i=0;i<numberOf;i++) {
-			generateBarrier();
+	public void removeBarrier(Position p) {
+		if(onPosition(p).equals(this.Barrier)) {
+			this.matrix[p.getX()][p.getY()]=this.Empty;
 		}
 	}
 }
