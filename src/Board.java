@@ -2,10 +2,10 @@ public class Board {
 	String[][] matrix;
 	private int rows;
 	private int columns;
-	static final String Player = "Y";
-	static final String Pirate = "X";
-	static final String Barrier = "M";
-	static final String Empty = "O";
+	public static final String Player = "Y";
+	public static final String Pirate = "X";
+	public static final String Barrier = "M";
+	public static final String Empty = "O";
 	
 	Board(int r,int c){
 		this.rows=r;
@@ -83,6 +83,13 @@ public class Board {
 			return this.Empty;
 		}
 		return matrix[p.getX()][p.getY()];
+	}
+	
+	public String onPosition(int x,int y) {
+		if(!isValidPosition(x, y)) {
+			return this.Empty;
+		}
+		return matrix[x][y];
 	}
 	
 	public void setBarrier(Position p) {

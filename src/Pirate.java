@@ -63,6 +63,36 @@ public class Pirate {
 		}
 	}
 	
+	public void moveToPlayer(Position playerPosition,int l) {
+		int[] arr = new int[4]; //up right down left
+		arr[0]=getDistanceToPlayer(this.p.getX()-1,this.p.getY(), playerPosition);
+		arr[1]=getDistanceToPlayer(this.p.getX(),this.p.getY()+1, playerPosition);
+		arr[2]=getDistanceToPlayer(this.p.getX()+1,this.p.getY(), playerPosition);
+		arr[3]=getDistanceToPlayer(this.p.getX(),this.p.getY()-1, playerPosition);	
+		int min=arr[0];
+		int indeks = 0;
+		for(int i=0;i<4;i++) {
+			if(arr[i]<min) {
+				min=arr[i];
+				indeks = i;
+			}
+		}
+		switch(indeks) {
+			case 0:
+				this.p.UP();
+				break;
+			case 1:
+				this.p.RIGHT();
+				break;
+			case 2:
+				this.p.DOWN();
+				break;
+			case 3:
+				this.p.LEFT();
+				break;
+		}
+	}
+	
 	private int getDistanceToPlayer(int x,int y,Position playerPosition) {
 		return Math.abs(playerPosition.getX()-x)+Math.abs(playerPosition.getY()-y);
 	}

@@ -43,7 +43,7 @@ public class Player {
 	}
 	
 	public void moveUpRight() {
-		this.position.DOWN_RIGHT();
+		this.position.UP_RIGHT();
 	}
 	
 	public void moveRight() {

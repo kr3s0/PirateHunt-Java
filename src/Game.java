@@ -14,9 +14,14 @@ public class Game {
 		list_Pirates = null;
 		list_Barriers = null;
 	}
+	
+	//Not real function
+	public void setLevel(int i) {
+		this.level = i;
+	}
 
-	public void setGame() {
-		this.b = new Board(10,10);
+	public void setGame(int r,int c) {
+		this.b = new Board(r,c);
 		this.p = new Player(new Position(3,3,b));
 		this.level = 1;
 		list_Pirates = new ArrayList<Pirate>();
@@ -67,7 +72,9 @@ public class Game {
 			for(int j=0;j<list_Barriers.size();j++) {
 				if(list_Pirates.get(i).getPosition().isEqual(list_Barriers.get(j).getPosition())) {
 					this.b.removePirate(list_Pirates.get(i).getPosition());
+					this.list_Pirates.remove(i);
 					this.b.setBarrier(list_Barriers.get(j).getPosition());
+					break;
 				}
 			}
 		}
