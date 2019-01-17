@@ -32,5 +32,8 @@ When you successfully run our Game, the rest of it should be fairly straightforw
   Apart from the obvious (viewing JavaDoc as html), I highly recommend using Eclipse (or other IDE) for that. From Project Menu navigate 
   to 'doc' folder inside our Project.When you open it, you can click to any of the <classname>.html file and you will get an actual webpage
   of my documentation(Also, to perform easier navigation through documentation, you can use links inside webpage).
+ 
+ If everything works fine, you should see:
+ ![Screenshot](GUI-Pirate Hunt.png)
   
   Tarik Kreso
