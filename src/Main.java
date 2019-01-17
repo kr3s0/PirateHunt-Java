@@ -1,5 +1,15 @@
 import java.util.Scanner;
 
+/**
+ * Main class is used to provide the user abillity to play the game in console.We render our game Board by
+ * calling Board.toConsole() method that simply output current game Board to console as it is.User interaction
+ * with the game is maintained through console,also, since after rendering board to console, the user is
+ * prompted to enter the move,which is then performed.
+ * 
+ * One more class that can be called self-explanatory.
+ * @author kr3s0
+ * @since 2019-01-05
+ */
 public class Main {
 	public static void main(String[] args) {
 		Game g1 = new Game();
