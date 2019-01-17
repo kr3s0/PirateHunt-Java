@@ -34,6 +34,6 @@ When you successfully run our Game, the rest of it should be fairly straightforw
   of my documentation(Also, to perform easier navigation through documentation, you can use links inside webpage).
  
  If everything works fine, you should see:
- ![Screenshot](GUI-Pirate Hunt.png)
+ ![Screenshot](https://github.com/kr3s0/PirateHunt-Java/blob/master/GUI-Pirate%20Hunt.png)
   
   Tarik Kreso
