@@ -28,7 +28,7 @@ Without further ado, let's describe how to run the "real" game (read GUI).Firstl
 
 When you successfully run our Game, the rest of it should be fairly straightforward.
 
-****Project documentation and APIs is generated using JavaDoc and it is added to project (see 'doc' folder)****
+****Project documentation and APIs are generated using JavaDoc and it is added to project (see 'doc' folder)****
   Apart from the obvious (viewing JavaDoc as html), I highly recommend using Eclipse (or other IDE) for that. From Project Menu navigate 
   to 'doc' folder inside our Project.When you open it, you can click to any of the <classname>.html file and you will get an actual webpage
   of my documentation(Also, to perform easier navigation through documentation, you can use links inside webpage).
